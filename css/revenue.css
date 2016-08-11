@@ -1,0 +1,203 @@
+body#revenue a#link_revenue{
+	font-weight: bold;
+	color: red;
+	background-color: pink;
+	}
+	
+
+	
+/*    L O G O  &  N A V I G A T I O N
+---------------------------------------------------------------------------------------------------------------------------*/
+
+#logo-nav{
+	overflow: hidden;
+	}
+	
+	
+nav{
+	width: 100%;
+	}
+
+
+	
+
+ul.navigation{
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	}
+ul.navigation li{
+	float: left;
+	}
+ul.navigation li a{
+	display: inline-block;
+	color: #8B0000;
+	text-align: center;
+	padding-right: 50px;
+	padding-top: 5px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 17px;
+	font-family: "Century Gothic";
+	}
+ul.navigation li a:hover{
+	color: red;
+	}
+ul.navigation li.icon{
+	display: none;
+	}
+
+
+/*    R E S P O N S I V E   C O R N E R!!!
+---------------------------------------------------------------------------------------------------------------------------*/	
+	
+@media screen and (max-width:680px){
+	ul.navigation li:not(:first-child){display: none;}
+	ul.navigation li.icon{
+	float: right;
+	display: inline-block;
+	}
+
+/*resposiveness added to the navigation when the user clicks the icon.*/
+	ul.navigation.responsive {position: relative;}
+	ul.navigation.responsive li.icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+	}
+ul.navigation.responsive li {
+	float: none;
+	display: inline;
+	}
+ul.navigation.responsive li a {
+	display: block;
+	text-align: left;
+	}
+nav { background-color: #f2f2f2;}
+
+		
+}
+
+
+
+
+/*    D A S H B O A R D
+------------------------------------------*/	
+#dashboardcontainer{
+	height:280px;
+	}
+
+#mobidashboard{
+
+	position: absolute;
+    top: 7.2%;
+    left: 0%;
+    min-width: 100%;
+    width: auto;
+    height: 250px;
+    background-color: #f2f2f2;
+	}	
+
+#dashmenu{
+	padding-left: 300px;
+	}
+	
+#dashmenu a{
+	background-color: #8B0000;
+	color: #f2f2f2;
+	display: inline-block;
+	padding: 11px 20px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	text-align: center;
+	font-family:"century gothic";
+	font-weight: bold;
+	text-decoration: none;
+	float: center;
+	padding-right: 20px;
+	
+	}
+
+#dashmenu a:hover{
+	color: pink;
+	}	
+
+#dashmenu a:visited{
+	text-decoration:none;
+	}
+	
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 80px;
+	padding-left: 20px;
+} 
+
+li{
+	display: inline;
+	}
+
+
+	
+#headertext{
+	margin:0;
+	color:#8B0000;
+	font-family: "Century Gothic";
+	font-weight: bold;
+	font-size: 25px;
+	text-align: center;
+	padding-top: 0px;
+	padding-left: 25px;
+	}		
+h1{
+	display:inline;
+	}	
+	
+/*    C O N T E N T
+--------------------*/	
+
+#revtext{
+	margin: 0;
+	padding: 20px 0 0 20px;
+	padding-bottom: 50px;
+	font-family: "century gothic";
+	}
+
+#revimg{
+	padding-top:280px;
+	}	
+	
+/*    F O O T E R
+----------------------------------------------------------------------------------------------------------------------------*/	
+footer{
+	position: absolute;
+    left: 0%;
+    min-width: 100%;
+    width: auto;
+    height: 50px;
+	color: #f2f2f2;
+    background-color: #8B0000;
+	}	
+#copyright{
+	font-family: "Century Gothic";
+	}
+	
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

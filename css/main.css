@@ -1,0 +1,670 @@
+
+
+.row{display: table-row;}
+.column{display: table-cell;}
+.block{display: block;}
+video {display: block; }
+
+
+/*    B O D Y
+-----------------------------------------------------------------------------------------------------------------------------*/
+
+body{
+	background-color: white;
+	font-family: sans-serif;
+	
+}
+
+body#home a#link_home{
+	color: red;
+	font-weight: bold;
+	font-size: 18px;
+	}
+
+
+/*    C O N T A I N E R
+-----------------------------------------------------------------------------------------------------------------------------*/
+#container{
+	overflow: hidden;
+	
+	}
+
+/*     N A V I G A T I O N
+-----------------------------------------------------------------------------------------------------------------------------*/
+#navi a{
+	/* background-color: #f6f6f6; */
+	color: #8B0000;
+	/* position: relative;
+	z-index: 100; */
+	}
+#navi a:hover{
+	color: #cc0000;
+	background-color: transparent;
+	}
+#navi a:visited{
+	text-decoration: none;
+	background-color: transparent;
+	}
+#cotitle{
+	color: #8B0000;
+	font-size: 18pt;
+	font-weight: bold;
+	}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: red;  /*Sets the text hover color on navbar*/
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+color: white; /*BACKGROUND color for active*/
+background-color: #8B0000;
+}
+.navbar-default .navbar-nav > li > a {
+   color: #8B0000; /*Change active text color here*/
+    }	
+.navbar-default {
+	border: none;
+	}
+
+.icon-bar{
+	background-color: #8B0000;
+	}
+
+
+/*    R E S P O N S I V E   C O R N E R!!!
+---------------------------------------------------------------------------------------------------------------------------*/	
+	
+@media screen and (max-width:680px){
+
+#videotext{
+	float: center;
+	font-size: 16px;
+	margin-top: 10%;
+	
+	}
+h1.darktext {
+	font-size: 30px !important;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	}	
+/* .vidbg {
+	background-image: url("../media/altimg4.png");
+	background-size: cover;
+	background-position: fill;
+} */
+}
+
+
+
+	
+/*    V I D E O   C O N T A I N E R
+-----------------------------------------------------------------------------------------------------------------------------*/	
+
+.video-background {
+	display:none;
+	position:fixed;
+	background-color: rgba(0,0,0,.5);
+	height:100vh;
+	width:100%;
+	top:0;
+	left:0;
+	z-index=1000;
+}
+.video-box {
+	width:700px;
+	min-height:441px;
+	margin:auto;
+	margin-top:10%;gr
+}
+.vidbg {
+	background-image:url('../media/altimg4.png');
+}
+
+.btnplay {
+	width:75px;
+	margin-left:auto;
+	margin-right: auto;
+	margin-top:20%;
+	border:none;
+	padding: 5px;
+	padding-top:10px;
+	padding-bottom: 10px;
+	border-radius:10px;
+	text-decoration: none;
+    display: block;
+    background: #8B0000;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+	
+	}	
+.btnplay #vidpause :hover{
+	background-color: #cc0000;
+	}
+/*    T E X T   A R E A
+----------------------------------------------------------------------------------------------------------------------------*/
+.infotab {
+	width:100%;
+	height: 100vh;
+}
+#videotext{
+	float: left;
+	font-size: 30px;
+	margin-top: 0%;
+	margin-left: 1.1%;
+	color: #8B0000;
+	}
+	
+	
+#totab{
+	margin-top: 0%;
+	}	
+
+h1.darktext {
+font-size:35px !important;
+display: inline;
+
+}
+		
+
+/*    B O T T O M      A R E A
+----------------------------------------------------------------------------------------------------------------------------*/
+
+
+.mobitext{
+	margin-left: 1%;
+	font-size: 12pt;
+	font-weight: normal;
+	}	
+
+
+h1.titles{
+	color: #8B0000;
+	margin-left: 1%;
+	}
+h2.invtext{
+	margin-left: 1%;
+	}	
+	
+a#data{
+	text-decoration: none;
+	}
+
+.mobimg1{
+	margin-left: 25%;
+	}
+.mobimg2{
+	margin-left: 5%;
+	}	
+.mobimg3{
+	margin-left: 25%;
+	}	
+.infotab2{
+	margin-bottom: 5%;
+	}
+.mobimg5{
+	margin-left: 5%;
+	}	
+.mobimg6{
+	margin-left: 5%;
+	}		
+.mobimg7{
+	margin-left: 6%;
+	}
+	
+	/*    F O O T E R
+----------------------------------------------------------------------------------------------------------------------------*/	
+	
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+*{
+	padding:0;
+	margin:0;
+}
+
+header{
+	text-align: center;
+	padding-top: 100px;
+	margin-bottom:200px;
+}
+
+header h1{
+	color: #f2f2f2;
+	padding-bottom: 16px;
+}
+
+header h2{
+	color: #f2f2f2;
+}
+
+header h2 a{
+	color:inherit;
+	text-decoration: none;
+	display: inline-block;
+	border: 1px solid #F05283;
+	padding: 10px 15px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+
+header ul {
+	max-width: 600px;
+	margin: 60px auto 0;
+}
+
+header ul a{
+	text-decoration: none;
+	color: Black;
+	text-align: left;
+	background-color: #f2f2f2;
+	padding: 10px 16px;
+	border-radius: 2px;
+	opacity: 1.0;
+	font-size: 16px;
+	display: inline-block;
+	margin: 4px;
+	line-height: 1;
+	outline: none;
+
+	transition: 0.2s ease;
+}
+
+header ul li a.active{
+	background-color: #f2f2f2;
+	pointer-events: none;
+}
+
+header ul li a:hover {
+	opacity: 1;
+}
+
+header ul{
+	list-style: none;
+	padding: 0;
+}
+
+header ul li{
+	display: inline-block;
+}
+
+
+
+
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+/* more code
+-----------------------*/	
+.footer-distributed{
+	background-color: #f6f6f6;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 0%;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #8B0000;
+	/* font: normal 36px 'Cookie', cursive; */
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #8B0000;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #8B0000;
+	margin: 20px 0 12px;
+	padding-left: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+	padding-right: 10px;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8B0000;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  f2f2f2;
+	color: #8B0000;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #8B0000;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #8B0000;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #8B0000;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #8B0000;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 7%;
+	padding-left: 0px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #f2f2f2;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: grey;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+.footer-distributed .footer-icons a :hover{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  white;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #3b5998;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+	}
+	
+.footer-distributed .footer-icons .f-icon a :hover{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  white;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #3b5998;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+	}
+.footer-distributed .footer-icons .t-icon a :hover{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  white;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #00aced;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+	}	
+.footer-distributed .footer-icons .l-icon a :hover{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  white;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #007bb6;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+	}	
+.footer-distributed .footer-icons .g-icon a :hover{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  white;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #dd4b39;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+	}	
+	
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+/*    T H E                                C O N T A C T                                   P A G E
+-----------------------------------------------------------------------------------------------------------------------------*/
+#form_contact{
+	padding-left: 10px;
+	padding-top: 10px;
+	font-size: 14pt;
+	}
+
+/*    T H E                                L O G - I N                                      P A G E
+-----------------------------------------------------------------------------------------------------------------------------*/
+/* LOGIN FORM
+----------------------*/	
+#formarea{
+	position: relative;
+    top: 5%;
+    left: 0%;
+    min-width: 100%;
+    width: auto;
+    height: 220px;
+
+
+}
+
+.loginform ul {
+	display: ;
+	list-style-type: none;
+    padding-top: 50px;
+	padding-left: 20px;
+    margin: 0;
+}
+
+
+.loginform li {
+    display: block;
+    float: left;
+}
+
+label {
+    display: block;
+    color: #8B0000;
+}
+
+input{
+	font-family: "sans-serif";
+	}
+
+.cf:before,
+.cf:after {
+    content: ""; 
+    display: table;
+}
+ 
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+:focus {
+    outline: 0;
+}
+
+.loginform input:not([type=submit]) {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 
+                0px 1px 0px 0px rgba(250, 250, 250, 0.5) ;
+}
+
+.loginform input[type=submit] {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background: #64c8ef; /* Old browsers */
+    background: -moz-linear-gradient(top,  #64c8ef 0%, #00a2e2 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#64c8ef), color-stop(100%,#00a2e2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #64c8ef 0%,#00a2e2 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64c8ef', endColorstr='#00a2e2',GradientType=0 ); /* IE6-9 */
+    color: #fff;
+    padding: 5px 15px;
+    margin-right: 0;
+    margin-top: 15px;
+    border-radius: 3px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+#loginbtn{
+	padding-left: 0px;
+	padding-top:4px;
+	color:#8B0000;
+	}	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

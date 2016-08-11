@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="utf-8" http-equiv="encoding">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="footer, address, phone, icons" />
+
+
+<title> 
+Video test
+</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+<link href="vidtest.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="vidtest">
+
+
+
+<nav class="navbar navbar-default ">
+  <div id="navi" class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand active" id="cotitle" href="index.html">MobiTill</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <!-- <li class="active"><a href="#">Home</a></li> -->
+        <li class="dropdown">
+          <a class="dropdown-toggle linksa" data-toggle="dropdown" href="#">Services <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="revenue.html">Event/Revenue Management</a></li>
+            <li><a href="inventory.html">Inventory Management</a></li>
+            <li><a href="card.html">Card Solutions</a></li>
+          </ul>
+        </li>
+        <li><a  href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> +254 205222210</a></li>
+        <li><a href="http://contact@dataintegrated.net"><span class="glyphicon glyphicon-envelope"></span> Contact@dataintegrated.net</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div id="videotext">
+	
+	<p id="introtext"><center><h1 class = "darktext"> Reliable & Secure </h1></br><strong>MOBITILL</strong> is a mobile point of sale device. <br>The device aims at centralizing different modes of payment, <br> making it easy to manage revenue collection.</center></p>
+		
+</div>
+
+<div id= "buttonplay">
+	<button id="vidplay">Play</button>	
+</div>
+
+<div id= "buttonfullvid">
+	<a id="link_mobivid" href="tester5.mp4" class="button" target="_blank">full MOBITILL video</a>	
+</div>
+
+
+
+<div id="mobividarea" class="fullscreen-bg">
+	<video class="videoarea">
+    <source src="tester5.mp4 " type="video/mp4">
+	</video>	
+</div> <!--end video container-->
+	
+
+<script type="text/javascript">
+
+var vid = document.getElementById("mobibgvid"),
+playButton = document.getElementById("vidplay");
+function vidFade() {
+    vid.classList.add("stopfade");
+}
+vid.addEventListener('ended', function() {
+    // only functional if "loop" is removed 
+     vid.play();
+	// to capture IE10
+	vidFade();
+});
+playButton.addEventListener("click", function() {
+    vid.classList.toggle("stopfade");
+	if (vid.paused) {
+vid.play();
+		pauseButton.innerHTML = "Pause";
+	} else {
+        vid.pause();
+        pauseButton.innerHTML = "Paused";
+	}
+});
+
+$(document).ready(function(){   
+       $("#mobibgvid").bind('ended', function(){
+          location.href="indexmobi.html";   
+       }); 
+      });
+
+</script>
+
+
+
+<p id="scroll"><strong>Or keep scrolling </strong></p>
+
+
+
+<div id="infotab1">	
+	<h1 class="titles">MobiTill: A Unique Product</h1>
+	<hr>
+	<p class="mobitext"><strong>MOBITILL</strong> is a mobile point of sale device. It allows for sales data to be captured, processed and documents and receipts printed directly or by using most printers.The device has: a printing module with a thermal printer attached; a mobile money transaction module; a credit card reader module, a point of sale (POS) and an electronic tax register (ETR) module.
+	<br>While there are numerous types of mobile point of sale systems out in the market, there is none as comprehensive as ours. Unlike mobitill, most mobile point of sale terminals that are card readers are usually attached to a phone and do not have a printing function or a mobile money transacting option. </p>
+	<img class="mobimg" src="mobitext1.png">
+	
+</div>
+
+<div id="infotab2">	
+	<h1 class="titles">Easy To Use</h1>
+	<hr>
+	<p class="mobitext"><strong>MOBITILL</strong> is made according to client's specific needs and is compact and light therefore making it very efficient and easy to use for customers.</p>
+	<img class="mobimg" src="mach1.jpg">
+	<img src="mach2.jpg">
+	<img src="mach3.jpg">
+	
+</div>
+
+<div id="infotab6">
+	<h1 class="titles">Awesome Support!</h1>
+	<hr>
+	<p class="mobitext">Our dedicated team at <a id="data" href="http://www.dataintegrated.net" target="blank">Data Integrated Limited</a> is always looking forward to provide any required assistance and maintenance support for our esteemed clients. We're always available to serve you!</p>
+	
+	<img class="mobimg" src="support2.jpg">
+</div>
+
+
+<footer class="footer-distributed">
+
+	<div class="footer-left">
+
+		<h3>Mobi<span>Till</span></h3>
+
+			<p class="footer-links">
+				<a href="#">Home</a>
+					
+				<a href="contact.html">Contact us</a>
+					
+				<a href="#">About</a>
+					
+				<a href="#">Faq</a>
+					
+				<a href="#">Contact</a>
+			</p>
+
+			<p class="footer-company-name">MobiTill &copy; 2016</p>
+	</div>
+
+	<div class="footer-center">
+
+			<div>
+				<i class="fa fa-map-marker"></i>
+				<p><span>Kasarani-Mwiki Road</span> Nairobi, Kenya</p>
+			</div>
+
+			<div>
+				<i class="fa fa-phone"></i>
+				<p>+254 205222210</p>
+			</div>
+
+			<div>
+				<i class="fa fa-envelope"></i>
+				<p><a href="http://www.contact@dataintegrated.net">Contact@dataintegrated.net</a></p>
+			</div>
+
+	</div>
+
+	<div class="footer-right">
+
+			<p class="footer-company-about">
+				<span>About MobiTill </span>
+				Mobitill is a product that aims to ease colection of different modes of payments via card, mobile money and cash.
+			</p>
+
+			<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+			</div>
+
+	</div>
+
+</footer>
+
+
+
+
+</body>
+</html>
